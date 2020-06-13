@@ -43,7 +43,10 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-    background: #FFFFFF;
+    background: url("img/gym 1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
     color: #2c2c2c;
     font-family: 'quicksand', Arial, sans-serif;
     font-size: 18px;
@@ -182,33 +185,53 @@ pre {
   margin-bottom: 2rem;
 }
 
+.signup-button {
+    border: none;
+    border-radius: 20px;
+    padding: 14px 40px;
+    background-color: #E4572E;
+    color: white;
+    font-weight: bold;
+}
+
+.signup-button:hover {
+    background-color: #F56E47;
+    cursor: pointer;
+}
+
 /*===== Titles =====*/
 .site-title {
     font-family: 'Righteous',helvetica,sans-serif;
-    font-size: 80px;
-    color: #E4572E;
+    font-size: 40px;
+    color: black;
     line-height: 1.5em;
     position: relative;
+    width: 100%;
     z-index: 12;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin-bottom: 120px;
 }
-.site-title:after {
-    content: 'the Weight Room';
-    color: #FFC857; 
-    z-index: -1;
+
+.site-title ul {
+    right: 0px;
     position: fixed;
-    padding-top: 1px;
-    padding-left: 4px;
+    margin: 30px;
+    padding: 0;
+    display: flex;
 }
-.site-title a {
+.site-title ul li {
+    padding-right: 50px;
+    display: inline-block;
+    list-style-type: none;
+}
+#logo {
     position: fixed;
 }
 .site-title a,
-.site-title a:visited { color: #E4572E; }
+.site-title a:visited { color: #000000; }
 .site-title a:hover,
 .site-title a:active {
-    color: #F28123;
+    color: #323232;
     opacity: 0.8;
 }
 .site-title div { display: inline; }
@@ -219,9 +242,24 @@ pre {
 }
 .site-tagline p {
     color: #2c2c2c;
-    font-size: 21px;
-    text-align: left;
-    width: 90%;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-tagline p:nth-child(1) {
+    font-size: 20px;
+}
+.site-tagline p:nth-child(2) {
+    font-size: 17px;
+}
+.site-tagline img {
+    width: 550px;
+    margin-top: 10px
+}
+.site-tagline form {
+    text-align: center;
+    margin-bottom: 30px;
 }
 .site-tagline a,
 .site-tagline a:visited { color: #E4572E; }
@@ -1005,8 +1043,17 @@ nav[role="navigation"] {
 @media only screen and (min-width: 401px) {
 
     /*===== Titles =====*/
-    .site-tagline p { 
-        font-size: 28px;
+    .site-title ul {
+        margin: 20px;
+    }
+    .site-title ul li {
+        padding-right: 25px;
+    }
+    .site-tagline p:nth-child(1) { 
+        font-size: 20px;
+    }
+    .site-tagline p:nth-child(2) { 
+        font-size: 15px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
@@ -1064,11 +1111,23 @@ nav[role="navigation"] {
     .site-title {
         margin-bottom: 120px;
     }
+    .site-title ul {
+        margin: 25px;
+    }
+    .site-title ul li {
+        padding-right: 40px;
+    }
     .site-tagline {
         margin-bottom: 60px;
     }
-    .site-tagline p { 
-        font-size: 36px;
+    .site-tagline p:nth-child(1) { 
+        font-size: 21px;
+    }
+    .site-tagline p:nth-child(2) { 
+        font-size: 16px;
+    }
+    .site-tagline img {
+        width: 500px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
@@ -1138,8 +1197,11 @@ nav[role="navigation"] {
     .site-tagline {
         margin-bottom: 80px;
     }
-    .site-tagline p { 
-        font-size: 42px;
+    .site-tagline p:nth-child(1) { 
+        font-size: 25px;
+    }
+    .site-tagline p:nth-child(2) { 
+        font-size: 20px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
@@ -1268,7 +1330,7 @@ nav[role="navigation"] {
     /*===== Structures =====*/
     .site-header,
     .page-desc {
-        padding: 100px 200px;
+        padding: 70px 120px;
     }
     .row {
         margin-top: 120px;
@@ -1276,19 +1338,30 @@ nav[role="navigation"] {
     /*===== Titles =====*/
     .site-title {
         margin-bottom: 200px;
+        font-size: 50px;
     }
     .site-tagline {
         margin-bottom: 100px;
-        width: 75%;
+        width: 100%;
     }
-    .site-tagline p { 
-        font-size: 48px;
+    .site-tagline img {
+        width: 620px;
+    }
+    .site-tagline p:nth-child(1) { 
+        font-size: 25px;
+    }
+    .site-tagline p:nth-child(2) { 
+        font-size: 20px;
     }
     .site-tagline h1 { 
         font-size: 3.2rem;
     }
     .site-tagline h5 { 
         font-size: 1.4rem;
+    }
+    .signup-button {
+        border-radius: 30px;
+        padding: 14px 40px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
