@@ -41,6 +41,7 @@ html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
 }
 body {
     background: url("img/gym 1.png");
@@ -983,11 +984,14 @@ nav[role="navigation"] {
   margin-left: 60px;
 }
 .row {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .site-content {
     clear: both;
+    border:;
+    background-color:rgba(245, 110, 71, 0.5)
 }
+
 .site-content figure{
     margin:0;
     padding: 0;
@@ -1000,6 +1004,12 @@ nav[role="navigation"] {
 .left {
     float: left;
     margin: 0px 40px 40px 0px ;
+}
+
+.crop-profile {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
 }
 
 /*=================================*/
@@ -1038,9 +1048,8 @@ nav[role="navigation"] {
 /* Media Queries
 /*=================================*/
 
-
-
-@media only screen and (min-width: 401px) {
+/*Edited, idk if right? Was 401*/
+@media only screen and (min-width: 300px) {
 
     /*===== Titles =====*/
     .site-title ul {
@@ -1100,7 +1109,7 @@ nav[role="navigation"] {
         padding: 60px;
     }
     .page-desc {
-        width: 75%;
+        width: 80%;
     }
     .page-desc h1,
     .page-desc h2,
@@ -1187,9 +1196,9 @@ nav[role="navigation"] {
     .page-desc {
         padding: 80px;
     }
-    .row {
+/*    .row {
         margin-top: 80px;
-    }
+    }*/
     /*===== Titles =====*/
     .site-title {
         margin-bottom: 160px;
@@ -1332,9 +1341,9 @@ nav[role="navigation"] {
     .page-desc {
         padding: 70px 120px;
     }
-    .row {
+/*    .row {
         margin-top: 120px;
-    }
+    }*/
     /*===== Titles =====*/
     .site-title {
         margin-bottom: 200px;
