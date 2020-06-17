@@ -988,6 +988,10 @@ nav[role="navigation"] {
     margin-top: 0px;
 }
 
+.site-content {
+    min-height: 100vh;
+}
+
 #content .site-content:nth-child(1) {
     clear: both;
     background-color: rgba(245, 110, 71, 0.5);
