@@ -987,9 +987,7 @@ nav[role="navigation"] {
 .row {
     margin-top: 0px;
 }
-.site-content {
-  height: 100vh;
-}
+
 #content .site-content:nth-child(1) {
     clear: both;
     background-color: rgba(245, 110, 71, 0.5);
