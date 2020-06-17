@@ -966,7 +966,7 @@ nav[role="navigation"] {
 
 .site-container {
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 .site-header,
 .page-desc {
