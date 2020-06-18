@@ -27,6 +27,8 @@ Description: A template by Aristotheme.
 /*=================================*/
 /* Reset & Clearfix Styles
 /*=================================*/
+@import url(//fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Quicksand:300,400,700);
 
 html,
 body,
@@ -158,7 +160,7 @@ body {
   background-attachment: fixed;
   background-position: right;
   color: #2c2c2c;
-  font-family: "quicksand", Arial, sans-serif;
+  font-family: "Quicksand", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.65;
   opacity: 0;
@@ -330,7 +332,8 @@ pre {
 .site-title ul {
   right: 0px;
   position: fixed;
-  margin: 30px;
+  margin-top: 40px;
+  margin-right: 0px;
   padding: 0;
   display: flex;
 }
@@ -1259,9 +1262,9 @@ nav[role="navigation"] {
     margin-bottom: 2em;
   }
 
-  .site-title ul {
-    margin: 20px;
-  }
+/*  .site-title ul {
+    margin: 40px;
+  }*/
   .site-title ul li {
     padding-right: 25px;
   }
@@ -1343,9 +1346,10 @@ nav[role="navigation"] {
   .site-title {
     margin-bottom: 120px;
   }
-  .site-title ul {
-    margin: 25px;
-  }
+/*  .site-title ul {
+    margin-top: 40px;
+    margin-right: 0px;
+  }*/
   .site-title ul li {
     padding-right: 40px;
   }
