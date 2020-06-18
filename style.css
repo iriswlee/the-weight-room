@@ -1146,21 +1146,17 @@ nav[role="navigation"] {
   width: 100vw;
 }
 
-#content .site-content:nth-child(1) {
+#content .site-content:nth-child(1n) {
   clear: both;
   background-color: rgba(245, 110, 71, 0.5);
 }
-#content .site-content:nth-child(2) {
+#content .site-content:nth-child(2n) {
   clear: both;
   background-color: rgba(253, 165, 15, 0.5);
 }
-#content .site-content:nth-child(3) {
+#content .site-content:last-child {
   clear: both;
-  background-color: rgba(245, 110, 71, 0.5);
-}
-#content .site-content:nth-child(4) {
-  clear: both;
-  background-color: rgba(253, 165, 15, 0.5);
+  background-color: transparent;
 }
 
 .site-content figure {
@@ -1199,6 +1195,23 @@ nav[role="navigation"] {
   width: 100%;
   margin-bottom: 40px;
 }
+
+.email-screenshot-left {
+  border: 1px solid black;
+}
+
+.email-screenshot-right {
+  border: 1px solid black;
+}
+
+.large-3:nth-child(1n) {
+  margin-right: 35px;
+}
+
+.large-3:last-child {
+  margin-right: 0px;
+}
+
 .large-1:nth-child(1n),
 .large-2:nth-child(1n),
 .large-3:nth-child(1n),
@@ -1207,8 +1220,8 @@ nav[role="navigation"] {
 }
 .large-1:last-child,
 .large-2:last-child,
-.large-3:last-child,
-.large-4:last-child {
+/*.large-3:last-child,
+*/.large-4:last-child {
   float: right;
 }
 
@@ -1535,7 +1548,7 @@ nav[role="navigation"] {
   }
 
   .large-2 {
-    width: 40%;
+    width: 42%;
   }
 
   .large-2:nth-child(1n) {
@@ -1554,9 +1567,9 @@ nav[role="navigation"] {
     float: left;
   }
 
-  .large-3:last-child {
+/*  .large-3:last-child {
     float: right;
-  }
+  }*/
 
   .large-4 {
     width: 20%;
@@ -1568,6 +1581,19 @@ nav[role="navigation"] {
 
   .large-4:last-child {
     float: right;
+  }
+  .email-screenshot-left {
+    border: 1px solid black;
+    -moz-box-shadow:    6px 6px #696969;
+    -webkit-box-shadow: 6px 6px #696969;
+    box-shadow:         6px 6px #696969;
+  }
+
+  .email-screenshot-right {
+    border: 1px solid black;
+    -moz-box-shadow:    -6px 6px #696969;
+    -webkit-box-shadow: -6px 6px #696969;
+    box-shadow:         -6px 6px #696969;
   }
 }
 
